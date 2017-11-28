@@ -9,7 +9,7 @@
 Go语言的标准库的质量还是很高的，你应该尽量的使用它。如果你正在写一些API服务，你就需要让自己熟练```net/http```包，而且无论你使用什么框架，它们都是基于这个包构建起来的。当标准库不能够恰当的解决你正在关注的重点问题时，引入第三方包是一个合理的做法，例如那些生成UUIDS和Json web token (JWT)处理器。有一些包（包括web框架）构建在标准库的上层，一个著名的例子就是在建立在sql/database之上的[jmoiron/sqlx ](https://jmoiron.github.io/sqlx/)。
 
 ### 包管理
-Go和包含一个软件包市场的语言有很大的不同，Node有[npm](https://www.npmjs.com/)，PHP有[packagist (composer)](https://packagist.org/)，Ruby有它的[gems](https://rubygems.org/)
+Go和包含一个软件包市场的语言有很大的不同，Node有[npm](https://www.npmjs.com/)，PHP有[packagist (composer)](https://packagist.org/)，Ruby有它的[gems](https://rubygems.org/)。
 
 
 ---
