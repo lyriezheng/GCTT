@@ -1,12 +1,9 @@
 \[翻译中\] by lyriezheng
 
-# Choosing a Go framework
+# 选择一个Go语言框架
 
-What's the best Go framework?
+每天，最多每几天天，就会有一些人跑到[/r/golang](https://www.reddit.com/r/golang/)问“哪个框架最好”，在我看来，至少应该尝试着用一个容易让人理解的方式来提出这个问题吧。我觉得你最好不要使用框架。
 
-原文链接：[https://scene-si.org/2017/10/18/choosing-a-go-framework/](https://scene-si.org/2017/10/18/choosing-a-go-framework/)
-
-译者自己根据原文翻译，译文保存为 markdown 格式，并附上尾部的签名。
 
 ---
 
