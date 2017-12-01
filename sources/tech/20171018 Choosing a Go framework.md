@@ -17,7 +17,15 @@ Go和包含一个软件包市场的语言有很大的不同，Node有[npm](https
 Go语言包代码存在于Github,Bitbucket以及其他仓库内，甚至可以自己进行托管。最完整的Go语言包列表可以通过检索[godoc](https://godoc.org/)得到，对从这些包生成的文档进行集中托管。Go语言并不提供类似于其他语言的某些项目的包市场，不过有一个值得注意的项目[gopkg.in](http://labix.org/gopkg.in),类似于其他包管理器那样进行包索引。
 不管你创建了什么样的包，都有可能因为代码质量等等因素而不被接受。某些软件包作者比其他人更为人所知，如果你正在寻找一些像配置标志软件包那样微不足道的东西，那么你只剩下少量但是高质量的选择。 这在相关的包装系统中是不可能的。
 相比较而言，Node软件包的质量发生了快速下降，由于把焦点放到了前后端之间，Node里面有了大量的怪异代码，而这种情况在Go语言中是不存在的。Go是一个纯正的服务端语言，而Node则往往服务于前后端的js代码。有一些违反了逻辑解释的模式存在于Node的开发过程中
-，这也是开发和采纳[left-pad](https://www.npmjs.com/package/left-pad)和[is-array](https://www.npmjs.com/package/is-array)的背后深层原因。
+，这也是开发和采纳[left-pad](https://www.npmjs.com/package/left-pad)和[is-array](https://www.npmjs.com/package/is-array)的背后深层原因。我迷失在每周解释成千上万的下载中了。
+
+### Go语言生态系统
+Go的生态系统比较小，但是有很多基于Go的了不起的项目，目前[go-chi/chi](https://github.com/go-chi/chi)在github上已经收获了超过2500个星和大量的积极反馈(像sqlx，chi项目建立在底层的net/http包上)。我们使用它做了[ErrorHub](https://errorhub.io/)，我强烈推荐这个项目。
+也有一些web框架可以使用，但是就像我前面所讲的，你应该首先使用标准库，然后你能够发现当你前进的时候真正需要的是什么。使用一个web框架本身不是必须的，但是当你要
+
+
+
+
 ---
 
 via: [https://scene-si.org/2017/10/18/choosing-a-go-framework/](https://scene-si.org/2017/10/18/choosing-a-go-framework/)
