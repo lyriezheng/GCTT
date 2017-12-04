@@ -21,7 +21,19 @@ Go语言包代码存在于Github,Bitbucket以及其他仓库内，甚至可以�
 
 ### Go语言生态系统
 Go的生态系统比较小，但是有很多基于Go的了不起的项目，目前[go-chi/chi](https://github.com/go-chi/chi)在github上已经收获了超过2500个星和大量的积极反馈(像sqlx，chi项目建立在底层的net/http包上)。我们使用它做了[ErrorHub](https://errorhub.io/)，我强烈推荐这个项目。
-也有一些web框架可以使用，但是就像我前面所讲的，你应该首先使用标准库，然后你能够发现当你前进的时候真正需要的是什么。使用一个web框架本身不是必须的，但是当你要
+也有一些web框架可以使用，但是就像我前面所讲的，你应该首先使用标准库，然后你能够发现当你前进的时候真正需要的是什么。使用一个web框架本身不是必须的，但是当你要拓展需求的时候，你也许可以更明智的把项目迁移到框架中。
+### 迁移自其他语言
+Go语言和其他原因的区别来自于语言的细节上。我们可以发现，从Python和Ruby迁移，或者从PHP迁移到JavaScripe有着相同的差异。Go语言也没有特别之处，你可能一开始觉得[slice工作原理](https://scene-si.org/2017/08/06/the-thing-about-slices/)有一点点困惑，但是从任何语言迁移到其他语言时都会遇到这样的问题，作为另一个样例，请看[Ruby谓词](http://ruby-for-beginners.rubymonstas.org/objects/predicates.html)。
+Go语言入门门槛不是很高，我曾经写了差不多15年的PHP，然后相对轻松的就转到Go语言上了。让你的脑袋理解Node的异步操作，包括Promises和Yields，那就困难很多了。如果要我建议两篇相关的文章的话，你可以阅读一下[对话Node之父Ryan Dahl](https://www.mappingthejourney.com/single-post/2017/08/31/episode-8-interview-with-ryan-dahl-creator-of-nodejs/)，[Bob Nystroms点评异步函数](http://journal.stuffwithstuff.com/2015/02/01/what-color-is-your-function/)也是一篇必读文章。
+>    我认为Node并不是一个构建大型web服务的最佳系统，我会使用Go来做这个事情。而且说实话，这也是我抛弃Node的原因，事实就是，Node不是最好的服务端系统。 --by Ryan Dahl
+    
+### Go的强大
+不管你选择什么项目来作为你的前后端框架，Go总是能够非常好的提供终端API。WebSocket？没问题！互联互通的Go语言集群？难道你没听说过Docker或者Kubernetes吗？那些可都是拥有者难以置信的扩展性的系统啊，而且，是用Go写的。
+Go是一个非常出色的语言，它提供了与数据库接口这样的后端逻辑，并通过HTTP终端API暴露此逻辑。前端堆栈的选择将确保你可以为浏览器使用和呈现此数据。
+如果你厌倦了React,那么将其替换为VueJs而并不减少任何Go语言代码。在其他语言中你可能会不得不像这样分隔应用，因为很多时候，你并不是写了一个server，而是一个产生输出并运行在浏览器中的脚本。当然，使用Go你需要使用相同的方式使用```http/template```，但是通过一个前端的框架来实现你的前端，将会给你带来只需要寻找那个框架的专业人才的好处。并不是每个人都会觉得Go舒服。
+你应该不会想去用bash来实现一个web server吧？
+
+
 
 
 
